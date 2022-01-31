@@ -293,7 +293,7 @@ class student_details:
     # ================================================ UPDATE FUNCTION =====================================================
 
     def update(self):
-        if self.var_Student_Number.get()=="" or self.var_Student_Email_ID.get()=="" or self.var_Room_Number.get()=="":
+        if self.var_Student_Number.get()=="" or self.var_Room_Number.get()=="":
             messagebox.showerror("Error","Please Enter all details",parent=self.root)
         else:
             con=mysql.connector.connect(host="localhost",user="root",password="Soujatya@2003",database="hostel_management",auth_plugin='mysql_native_password')

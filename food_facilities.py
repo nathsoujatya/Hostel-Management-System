@@ -98,7 +98,7 @@ class food_details:
         btnSearch=Button(Table_Frame,text="Search",command=self.search,font=("times new roman",10,"bold"),bg="red",fg="gold",width=11)
         btnSearch.grid(row=0,column=3,padx=1)
 
-        btnShowAll=Button(Table_Frame,text="Show All",font=("times new roman",10,"bold"),bg="red",fg="gold",width=11)
+        btnShowAll=Button(Table_Frame,text="Show All",command=self.fetch_data,font=("times new roman",10,"bold"),bg="red",fg="gold",width=11)
         btnShowAll.grid(row=0,column=4,padx=1)
 
         # ============================================== Display Data Table ===========================================

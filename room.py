@@ -137,7 +137,7 @@ class room_details:
         btnSearch=Button(Table_Frame,text="Search",command=self.search_data_boys,font=("times new roman",10,"bold"),bg="red",fg="gold",width=11)
         btnSearch.grid(row=0,column=3,padx=1)
 
-        btnShowAll=Button(Table_Frame,text="Show All",font=("times new roman",10,"bold"),bg="red",fg="gold",width=11)
+        btnShowAll=Button(Table_Frame,text="Show All",command=self.fetch_data_boys,font=("times new roman",10,"bold"),bg="red",fg="gold",width=11)
         btnShowAll.grid(row=0,column=4,padx=1)
 
         # ================================================ TABLE FRAME OF GIRLS =================================================
@@ -163,7 +163,7 @@ class room_details:
         btnSearch_girl=Button(Table_Frame_girl,text="Search",command=self.search_data_girls,font=("times new roman",10,"bold"),bg="red",fg="gold",width=11)
         btnSearch_girl.grid(row=0,column=3,padx=1)
 
-        btnShowAll_girl=Button(Table_Frame_girl,text="Show All",font=("times new roman",10,"bold"),bg="red",fg="gold",width=11)
+        btnShowAll_girl=Button(Table_Frame_girl,text="Show All",command=self.fetch_data_girls,font=("times new roman",10,"bold"),bg="red",fg="gold",width=11)
         btnShowAll_girl.grid(row=0,column=4,padx=1)
 
         # =============================================== DISPLAY BOYS TABLE ==============================================
